@@ -5,33 +5,33 @@ import { Heart } from "lucide-react";
 
 const milestones = [
   {
-    date: "25-26 Abril",
-    title: "Las Bases",
-    description: "Panel de detalles de pedidos y estados visuales del chat.",
-    emoji: "🏗️",
-  },
-  {
-    date: "27 Abril",
-    title: "Automatización",
-    description: "Horarios automatizados y control inicial de domiciliarios.",
-    emoji: "⚙️",
-  },
-  {
-    date: "28 Abril",
-    title: "Rediseño UX",
-    description: "Interfaz idéntica a WhatsApp para facilitar la curva de aprendizaje.",
+    date: "27-28 Abril",
+    title: "La Nueva Interfaz",
+    description: "Despliegue del diseño réplica de WhatsApp a 3 columnas y panel interactivo de pedidos.",
     emoji: "🎨",
   },
   {
-    date: "29 Abril",
-    title: "Notificaciones",
-    description: "Sistema de avisos proactivos: pedido en camino/listo para el cliente.",
-    emoji: "🔔",
+    date: "29-30 Abril",
+    title: "Disponibilidad y Turnos",
+    description: "Gestión de disponibilidad de productos en tiempo real y módulo de liquidación de domiciliarios.",
+    emoji: "⚙️",
   },
   {
-    date: "30 Abril",
-    title: "Operación Perfecta",
-    description: "Liquidación de domicilios y respuestas rápidas para una operación impecable.",
+    date: "1-2 Mayo",
+    title: "Asignación y Pausas",
+    description: "Asignación ágil de domiciliarios (QuickCourier) y control avanzado de pausas del bot.",
+    emoji: "⚡",
+  },
+  {
+    date: "3-4 Mayo",
+    title: "Inteligencia Artificial",
+    description: "Unificación de agentes de IA para extracción de pedidos y sistema de resiliencia ante caídas.",
+    emoji: "🧠",
+  },
+  {
+    date: "5-6 Mayo",
+    title: "Automatización Total",
+    description: "Estimación automática de domicilios e impresión directa de comandas a cocina sin intervención manual.",
     emoji: "🚀",
   },
 ];
@@ -48,7 +48,7 @@ export default function Timeline() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            <span className="text-primary">6 días</span> de evolución
+            <span className="text-primary">10 días</span> de evolución
           </h2>
           <p className="text-lg text-muted-foreground">
             Desarrollamos e iteramos el ecosistema en tiempo real durante la prueba piloto en Tierra Querida, adaptándonos a la operación viva.

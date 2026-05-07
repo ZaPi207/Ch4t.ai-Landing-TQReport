@@ -1,8 +1,10 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { ArrowRight, MessageCircle, BarChart2 } from "lucide-react";
 import { useEffect, useState } from "react";
+
+const SEDES = ["Marinilla", "Porvenir", "La Ceja 1"];
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -10,6 +12,7 @@ export default function Hero() {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [sedeIndex, setSedeIndex] = useState(0);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -20,6 +23,13 @@ export default function Hero() {
     };
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSedeIndex((prev) => (prev + 1) % SEDES.length);
+    }, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -38,7 +48,7 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            📊 Reporte de Prueba Piloto — Marinilla
+            📊 Reporte de Prueba Piloto CH4T.AI en TQ
           </div>
 
           {/* Title */}
@@ -51,7 +61,32 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-soft-steel mb-8 max-w-2xl mx-auto leading-relaxed">
-            Durante 4 días de operación real, validamos que la automatización con Ch4t.ai optimiza significativamente la atención al cliente, el flujo logístico y las ventas en Tierra Querida - Marinilla.
+            Durante 10 días de operación real, validamos que la automatización con Ch4t.ai optimiza significativamente la atención al cliente, el flujo logístico y las ventas en{" "}
+            <span className="inline-flex items-baseline">
+              <span className="whitespace-nowrap">Tierra Querida - </span>
+              {" "}
+              <span
+                className="relative inline-block overflow-hidden align-baseline"
+              >
+                {/* Invisible spacer to reserve width */}
+                <span className="invisible font-semibold" aria-hidden="true">
+                  {SEDES.reduce((a, b) => (a.length >= b.length ? a : b))}
+                </span>
+                <AnimatePresence initial={false}>
+                  <motion.span
+                    key={SEDES[sedeIndex]}
+                    initial={{ y: "100%", opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: "-100%", opacity: 0 }}
+                    transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                    className="absolute left-0 top-0 w-full font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+                  >
+                    {SEDES[sedeIndex]}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
+            </span>
+            .
           </p>
 
           {/* CTA Buttons */}

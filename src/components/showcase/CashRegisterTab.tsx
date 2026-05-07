@@ -77,10 +77,10 @@ export default function CashRegisterTab() {
   }, [runCycle]);
 
   const statCards = [
-    { icon: DollarSign, label: "Ventas Totales", target: 11976250, prefix: "$", color: "primary", delay: 0 },
-    { icon: TrendingUp, label: "Pedidos Procesados", target: 250, prefix: "+", color: "secondary", delay: 0.1 },
-    { icon: TrendingUp, label: "Ticket Promedio", target: 47905, prefix: "$", color: "emerald-600", delay: 0.2 },
-    { icon: TrendingUp, label: "Mensajes", target: 3000, prefix: "+", color: "blue-600", delay: 0.3 },
+    { icon: DollarSign, label: "Ventas Totales", target: 55912800, prefix: "$", color: "primary", delay: 0 },
+    { icon: TrendingUp, label: "Pedidos Procesados", target: 1104, prefix: "+", color: "secondary", delay: 0.1 },
+    { icon: TrendingUp, label: "Ticket Promedio", target: 50646, prefix: "$", color: "emerald-600", delay: 0.2 },
+    { icon: TrendingUp, label: "Mensajes", target: 80400, prefix: "+", color: "blue-600", delay: 0.3 },
   ];
 
   return (
@@ -88,8 +88,8 @@ export default function CashRegisterTab() {
       <div className="w-full max-w-2xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <div>
-            <h3 className="text-lg font-bold text-foreground">Reporte Global — Piloto 4 Días</h3>
-            <p className="text-xs text-muted-foreground">27-30 de Abril, 2026 · Marinilla</p>
+            <h3 className="text-lg font-bold text-foreground">Reporte Global — Piloto 10 Días</h3>
+            <p className="text-xs text-muted-foreground">27 de Abril - 6 de Mayo, 2026 · Tierra Querida</p>
           </div>
           <AnimatePresence>
             {step === 3 && (

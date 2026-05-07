@@ -16,21 +16,21 @@ const conversation: ChatMessage[] = [
   {
     id: 2,
     from: "bot",
-    text: "¡Hola! 🍔 Excelente elección. Nuestra Doble Smash tiene doble carne, queso cheddar fundido y salsa especial. ¿La quieres con ese combo?",
+    text: "¡Hola! 🍔 Excelente elección. Nuestra Hamburguesa Doble tiene doble carne, queso cheddar y americano, vegetales y salsas. ¿La quieres con adición de tocineta?",
     delay: 1800,
   },
-  { id: 3, from: "client", text: "Sí, esa misma!", delay: 3500 },
+  { id: 3, from: "client", text: "Sip, con tocineta", delay: 3500 },
   {
     id: 4,
     from: "bot",
-    text: "¡Perfecto! 🤤 ¿Te gustaría agregar unas papas fritas y una limonada de coco? Es nuestro combo estrella ⭐",
+    text: "¡Perfecto! 🤤 ¿Te gustaría agregar unas papas de sabores y una Coca-Cola? Es tu pedido preferido",
     delay: 5200,
   },
-  { id: 5, from: "client", text: "Dale, con papas y limonada", delay: 7000 },
+  { id: 5, from: "client", text: "Dale, con papas de cebolla y Coca-Cola", delay: 7000 },
   {
     id: 6,
     from: "bot",
-    text: "✅ ¡Pedido confirmado!\n\n🍔 Doble Smash x1\n🍟 Papas Fritas x1\n🥥 Limonada de Coco x1\n\n💰 Total: $32.000\n\nTu pedido ya fue enviado a cocina. Te avisamos cuando esté listo 🔥",
+    text: "✅ ¡Pedido confirmado!\n\n🍔 Hamburguesa Doble con tocineta x1\n🍟 Papas de cebolla x1\n Coca-Cola x1\n\n💰 Total: $38.700\n\nTu pedido ya fue enviado a cocina. Te avisamos cuando esté listo 🔥",
     delay: 8800,
   },
 ];
@@ -144,16 +144,14 @@ export default function WhatsAppTab() {
                   initial={{ opacity: 0, y: 15, scale: 0.9 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                  className={`flex ${
-                    msg.from === "client" ? "justify-end" : "justify-start"
-                  }`}
+                  className={`flex ${msg.from === "client" ? "justify-end" : "justify-start"
+                    }`}
                 >
                   <div
-                    className={`max-w-[80%] px-3 py-2 rounded-xl text-xs leading-relaxed shadow-sm ${
-                      msg.from === "client"
-                        ? "bg-[#dcf8c6] text-graphite rounded-tr-none"
-                        : "bg-white text-graphite rounded-tl-none"
-                    }`}
+                    className={`max-w-[80%] px-3 py-2 rounded-xl text-xs leading-relaxed shadow-sm ${msg.from === "client"
+                      ? "bg-[#dcf8c6] text-graphite rounded-tr-none"
+                      : "bg-white text-graphite rounded-tl-none"
+                      }`}
                   >
                     <p className="whitespace-pre-line">{msg.text}</p>
                     <div className="flex items-center justify-end gap-1 mt-1">

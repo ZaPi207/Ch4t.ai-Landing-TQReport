@@ -17,7 +17,7 @@ const results = [
     icon: Bot,
     title: "Volumen de Atención",
     description:
-      "+450 chats gestionados sin intervención humana inicial, liberando tiempo valioso para el equipo en local.",
+      "+2.200 chats gestionados sin intervención humana inicial, liberando tiempo valioso para el equipo en local.",
     color: "text-primary",
     bg: "bg-primary/10",
   },
@@ -25,7 +25,7 @@ const results = [
     icon: MessageSquare,
     title: "Interacción Masiva",
     description:
-      "+3,000 mensajes enviados y recibidos fluidamente por nuestro asistente inteligente en solo 4 días.",
+      "+80.400 mensajes enviados y recibidos fluidamente por nuestro asistente inteligente en solo 4 días.",
     color: "text-secondary",
     bg: "bg-secondary/10",
   },
@@ -33,7 +33,7 @@ const results = [
     icon: TrendingUp,
     title: "Ticket Promedio Alto",
     description:
-      "$47.905 pesos de ticket promedio de venta sostenido, gracias a las estrategias de upselling automatizado.",
+      "$50.646 pesos de ticket promedio de venta sostenido, gracias a las estrategias de upselling automatizado.",
     color: "text-emerald-600",
     bg: "bg-emerald-500/10",
   },
@@ -41,7 +41,7 @@ const results = [
     icon: BarChart3,
     title: "Conversión Efectiva",
     description:
-      "+250 pedidos procesados de inicio a fin por el bot y enviados directamente a la operación.",
+      "+1.104 pedidos procesados de inicio a fin por el bot y enviados directamente a la operación.",
     color: "text-primary",
     bg: "bg-primary/10",
   },
@@ -96,7 +96,7 @@ export default function Features() {
           </h2>
           <p className="text-lg text-muted-foreground">
             Los números hablan por sí solos. Esto fue lo que logramos durante el
-            piloto en Marinilla implementando el ecosistema Ch4t.ai.
+            piloto en Tierra Querida implementando el ecosistema Ch4t.ai.
           </p>
         </motion.div>
 

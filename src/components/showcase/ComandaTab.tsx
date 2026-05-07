@@ -22,16 +22,16 @@ const ticketData: TicketLine[] = [
   { type: "item", content: "Tipo: Domicilio 🛵", align: "left" },
   { type: "blank", content: "" },
   { type: "separator", content: "───────────────────────", align: "center" },
-  { type: "item", content: "1x Doble Smash         $22.000", align: "left" },
-  { type: "item", content: "   + Queso extra        $3.000", align: "left" },
-  { type: "item", content: "1x Papas Fritas         $7.000", align: "left" },
-  { type: "item", content: "1x Limonada Coco        $5.000", align: "left" },
+  { type: "item", content: "1x Hamburguesa Doble         $24.900", align: "left" },
+  { type: "item", content: "   + Tocineta        $3.000", align: "left" },
+  { type: "item", content: "1x Papas Queso         $5.900", align: "left" },
+  { type: "item", content: "1x Coca-Cola 400ml       $4.900", align: "left" },
   { type: "separator", content: "───────────────────────", align: "center" },
   { type: "blank", content: "" },
-  { type: "total", content: "SUBTOTAL:              $37.000", align: "left", bold: true },
-  { type: "total", content: "DOMICILIO:              $5.000", align: "left" },
+  { type: "total", content: "SUBTOTAL:              $38.700", align: "left", bold: true },
+  { type: "total", content: "DOMICILIO:              $6.000", align: "left" },
   { type: "separator", content: "═══════════════════════", align: "center" },
-  { type: "total", content: "TOTAL:                 $42.000", align: "left", bold: true },
+  { type: "total", content: "TOTAL:                 $44.700", align: "left", bold: true },
   { type: "separator", content: "═══════════════════════", align: "center" },
   { type: "blank", content: "" },
   { type: "footer", content: "Pago: Transferencia ✅", align: "center" },
@@ -135,15 +135,13 @@ export default function ComandaTab() {
                   initial={{ opacity: 0, x: -5 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.08 }}
-                  className={`text-[11px] leading-5 text-graphite ${
-                    line.bold ? "font-bold" : ""
-                  } ${
-                    line.align === "center"
+                  className={`text-[11px] leading-5 text-graphite ${line.bold ? "font-bold" : ""
+                    } ${line.align === "center"
                       ? "text-center"
                       : line.align === "right"
-                      ? "text-right"
-                      : "text-left"
-                  } ${line.type === "total" ? "text-primary" : ""}`}
+                        ? "text-right"
+                        : "text-left"
+                    } ${line.type === "total" ? "text-primary" : ""}`}
                 >
                   {line.content}
                 </motion.div>
