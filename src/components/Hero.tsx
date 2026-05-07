@@ -112,14 +112,14 @@ export default function Hero() {
       <motion.div
         animate={{ y: mousePosition.y * 3, x: mousePosition.x * 3 }}
         transition={{ type: "spring", stiffness: 30 }}
-        className="hidden lg:flex absolute top-1/3 left-12 glass-mandarine px-5 py-4 rounded-2xl items-center gap-3"
+        className="hidden lg:flex absolute top-1/3 left-25 glass-mandarine px-5 py-4 rounded-2xl items-center gap-3"
       >
         <div className="p-2.5 bg-primary/20 rounded-full">
           <MessageCircle className="w-5 h-5 text-primary" />
         </div>
         <div className="text-left">
-          <p className="text-sm font-bold text-foreground">+450 Chats</p>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-m font-bold text-foreground">+2.200 Chats</p>
+          <p className="text-s text-muted-foreground">
             Atendidos automáticamente
           </p>
         </div>
@@ -129,14 +129,14 @@ export default function Hero() {
       <motion.div
         animate={{ y: mousePosition.y * -2, x: mousePosition.x * -2 }}
         transition={{ type: "spring", stiffness: 40 }}
-        className="hidden lg:flex absolute bottom-1/4 right-12 glass px-5 py-4 rounded-2xl items-center gap-3"
+        className="hidden lg:flex absolute bottom-1/4 right-20 glass px-5 py-4 rounded-2xl items-center gap-3"
       >
         <div className="p-2.5 bg-secondary/15 rounded-full">
           <BarChart2 className="w-5 h-5 text-secondary" />
         </div>
         <div className="text-left">
-          <p className="text-sm font-bold text-foreground">+3,000 Mensajes</p>
-          <p className="text-xs text-muted-foreground">Procesados en 4 días</p>
+          <p className="text-m font-bold text-foreground">+80,400 Mensajes</p>
+          <p className="text-s text-muted-foreground">Procesados en 10 días</p>
         </div>
       </motion.div>
     </section>
