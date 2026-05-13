@@ -118,7 +118,7 @@ export default function Hero() {
           <MessageCircle className="w-5 h-5 text-primary" />
         </div>
         <div className="text-left">
-          <p className="text-m font-bold text-foreground">+2.200 Chats</p>
+          <p className="text-m font-bold text-foreground">+4.000 Chats</p>
           <p className="text-s text-muted-foreground">
             Atendidos automáticamente
           </p>
@@ -135,8 +135,8 @@ export default function Hero() {
           <BarChart2 className="w-5 h-5 text-secondary" />
         </div>
         <div className="text-left">
-          <p className="text-m font-bold text-foreground">+80,400 Mensajes</p>
-          <p className="text-s text-muted-foreground">Procesados en 10 días</p>
+          <p className="text-m font-bold text-foreground">+164.700 Mensajes</p>
+          <p className="text-s text-muted-foreground">Procesados en 15 días</p>
         </div>
       </motion.div>
     </section>

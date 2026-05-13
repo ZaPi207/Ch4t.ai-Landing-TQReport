@@ -17,7 +17,7 @@ const results = [
     icon: Bot,
     title: "Volumen de Atención",
     description:
-      "+2.200 chats gestionados sin intervención humana inicial, liberando tiempo valioso para el equipo en local.",
+      "+4.000 chats gestionados sin intervención humana inicial, liberando tiempo valioso para el equipo en local.",
     color: "text-primary",
     bg: "bg-primary/10",
   },
@@ -25,7 +25,7 @@ const results = [
     icon: MessageSquare,
     title: "Interacción Masiva",
     description:
-      "+80.400 mensajes enviados y recibidos fluidamente por nuestro asistente inteligente en solo 4 días.",
+      "+164.700 mensajes enviados y recibidos fluidamente por nuestro asistente inteligente en solo 4 días.",
     color: "text-secondary",
     bg: "bg-secondary/10",
   },
@@ -33,7 +33,7 @@ const results = [
     icon: TrendingUp,
     title: "Ticket Promedio Alto",
     description:
-      "$50.646 pesos de ticket promedio de venta sostenido, gracias a las estrategias de upselling automatizado.",
+      "$52.318 pesos de ticket promedio de venta sostenido, gracias a las estrategias de upselling automatizado.",
     color: "text-emerald-600",
     bg: "bg-emerald-500/10",
   },
@@ -41,7 +41,7 @@ const results = [
     icon: BarChart3,
     title: "Conversión Efectiva",
     description:
-      "+1.104 pedidos procesados de inicio a fin por el bot y enviados directamente a la operación.",
+      "+2.495 pedidos procesados de inicio a fin por el bot y enviados directamente a la operación.",
     color: "text-primary",
     bg: "bg-primary/10",
   },
@@ -92,7 +92,7 @@ export default function Features() {
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground tracking-tight">
             Impacto medible en solo{" "}
-            <span className="text-primary">4 días de operación</span>
+            <span className="text-primary">15 días de operación</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Los números hablan por sí solos. Esto fue lo que logramos durante el

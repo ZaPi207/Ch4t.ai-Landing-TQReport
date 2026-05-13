@@ -34,6 +34,12 @@ const milestones = [
     description: "Estimación automática de domicilios e impresión directa de comandas a cocina sin intervención manual.",
     emoji: "🚀",
   },
+  {
+    date: "7-11 Mayo",
+    title: "Expansión Medellín",
+    description: "Llevamos la solución a Medellín y continuamos evolucionando el ecosistema en tiempo real.",
+    emoji: "🏙️",
+  },
 ];
 
 export default function Timeline() {
@@ -48,7 +54,7 @@ export default function Timeline() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground tracking-tight">
-            <span className="text-primary">10 días</span> de evolución
+            <span className="text-primary">15 días</span> de evolución
           </h2>
           <p className="text-lg text-muted-foreground">
             Desarrollamos e iteramos el ecosistema en tiempo real durante la prueba piloto en Tierra Querida, adaptándonos a la operación viva.
@@ -70,17 +76,15 @@ export default function Timeline() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`relative flex items-start mb-12 ${
-                  isLeft
-                    ? "md:flex-row flex-row"
-                    : "md:flex-row-reverse flex-row"
-                }`}
+                className={`relative flex items-start mb-12 ${isLeft
+                  ? "md:flex-row flex-row"
+                  : "md:flex-row-reverse flex-row"
+                  }`}
               >
                 {/* Content Card */}
                 <div
-                  className={`ml-14 md:ml-0 md:w-[calc(50%-2rem)] ${
-                    isLeft ? "md:pr-8 md:text-right" : "md:pl-8 md:text-left"
-                  }`}
+                  className={`ml-14 md:ml-0 md:w-[calc(50%-2rem)] ${isLeft ? "md:pr-8 md:text-right" : "md:pl-8 md:text-left"
+                    }`}
                 >
                   <div className="glass bg-white/40 p-5 rounded-2xl border border-white/50 hover:scale-[1.02] transition-transform">
                     <span className="text-2xl mb-2 block">{milestone.emoji}</span>

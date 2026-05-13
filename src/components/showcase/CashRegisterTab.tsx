@@ -77,10 +77,10 @@ export default function CashRegisterTab() {
   }, [runCycle]);
 
   const statCards = [
-    { icon: DollarSign, label: "Ventas Totales", target: 55912800, prefix: "$", color: "primary", delay: 0 },
-    { icon: TrendingUp, label: "Pedidos Procesados", target: 1104, prefix: "+", color: "secondary", delay: 0.1 },
-    { icon: TrendingUp, label: "Ticket Promedio", target: 50646, prefix: "$", color: "emerald-600", delay: 0.2 },
-    { icon: TrendingUp, label: "Mensajes", target: 80400, prefix: "+", color: "blue-600", delay: 0.3 },
+    { icon: DollarSign, label: "Ventas Totales", target: 130533412, prefix: "$", color: "primary", delay: 0 },
+    { icon: TrendingUp, label: "Pedidos Procesados", target: 2495, prefix: "+", color: "secondary", delay: 0.1 },
+    { icon: TrendingUp, label: "Ticket Promedio", target: 52318, prefix: "$", color: "emerald-600", delay: 0.2 },
+    { icon: TrendingUp, label: "Mensajes", target: 164700, prefix: "+", color: "blue-600", delay: 0.3 },
   ];
 
   return (
