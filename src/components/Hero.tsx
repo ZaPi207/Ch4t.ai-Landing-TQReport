@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import { ArrowRight, MessageCircle, BarChart2 } from "lucide-react";
+import { ArrowRight, MessageCircle, BarChart2, DollarSign } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const SEDES = ["Marinilla", "Porvenir", "La Ceja 1"];
@@ -137,6 +137,20 @@ export default function Hero() {
         <div className="text-left">
           <p className="text-m font-bold text-foreground">+164.700 Mensajes</p>
           <p className="text-s text-muted-foreground">Procesados en 15 días</p>
+        </div>
+      </motion.div>
+      {/* Floating Badge — Revenue */}
+      <motion.div
+        animate={{ y: mousePosition.y * 2.5, x: mousePosition.x * 2.5 }}
+        transition={{ type: "spring", stiffness: 35 }}
+        className="hidden lg:flex absolute top-[15%] right-[10%] glass px-5 py-4 rounded-2xl items-center gap-3"
+      >
+        <div className="p-2.5 bg-green-500/15 rounded-full">
+          <DollarSign className="w-5 h-5 text-green-500" />
+        </div>
+        <div className="text-left">
+          <p className="text-m font-bold text-foreground">$130.533.412</p>
+          <p className="text-s text-muted-foreground">Ingresos totales hasta ahora</p>
         </div>
       </motion.div>
     </section>

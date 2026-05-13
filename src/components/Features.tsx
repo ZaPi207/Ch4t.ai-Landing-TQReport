@@ -47,9 +47,9 @@ const results = [
   },
   {
     icon: Printer,
-    title: "Precisión Total",
+    title: "Alta Precisión",
     description:
-      "100% de las comandas impresas automáticamente en cocina sin errores de transcripción humana.",
+      "99% de las comandas impresas automáticamente en cocina sin errores de transcripción humana.",
     color: "text-blue-600",
     bg: "bg-blue-500/10",
   },
