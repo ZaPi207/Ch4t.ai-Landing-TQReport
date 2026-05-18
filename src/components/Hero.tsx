@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { ArrowRight, MessageCircle, BarChart2, DollarSign } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const SEDES = ["Marinilla", "Porvenir", "La Ceja 1"];
+const SEDES = ["Marinilla", "Porvenir", "La Ceja 1", "Envigado", "La Milagrosa", "Laureles"];
 
 export default function Hero() {
   const { scrollY } = useScroll();
